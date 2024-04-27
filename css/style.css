@@ -1,0 +1,102 @@
+.btn-outline-danger{
+    color: #B3061B !important;
+    border-color: #B3061B !important;
+}
+.btn-outline-danger:hover{
+    color: white !important;
+    background-color: #B3061B !important;
+}
+.bg-dark {background-color: #1C3144 !important;}
+.card{
+    border: 1px solid;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    text-align: center;
+    height: 18em;
+}
+.sub{margin-left: 0.2em;}
+.sub::after{
+    content: '';
+    display: block;
+    width: 70%;
+    margin-left: 15%;
+    height: 2px;
+    background-color: #B3061B;
+    border-radius: 20px;
+}
+
+/* Custom */
+#nav{
+    width: 100% !important;
+    padding: 1em 10% 1em 10% !important;
+    z-index: 2;
+    background-color: white;
+    z-index: 10;
+}
+#logo{height: 30px;padding-right: 2em;}
+nav ul li{margin: 0 0.2em 0 0.2em;}
+li a:hover{text-decoration: underline;}
+h1{font-size: 4em !important}
+#principal{
+    width: 100%;
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#principal article{
+    width: 50%;
+    padding: 0 5% 0 10%;
+    color: #1C3144;
+}
+#fig1{display: none;}
+#principal .logo2{width: 200px;}
+#principal figure{width: 50%;}
+#principal img{width: 100%;}
+#servicios{
+    background-color: #1C3144;
+}
+.serviciosResumen{filter: opacity(0.8);}
+.serviciosResumen img{width: 20%;}
+#tecnologias img{width: 20%;}
+.card img{width: 30%;}
+.proyectos img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+.proyectos div{
+    padding: 0 !important;
+    padding: 0.5em !important;
+    text-shadow: 0 0 1px black;
+}
+#contacto{
+    height: 50vh;
+    background-image: url('../img/oficina-programador-freepik.jpg'), linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+footer img{width: 30px;}
+
+.imgContact{
+    width: 100%;
+}
+/* Responsive */
+@media all and (max-width:700px){
+    #fig1{display:block}#fig2{display:none}
+    h1{font-size: calc(1.375rem + 1.5vw)!important;margin-bottom:0 !important;}
+    #principal article{
+        width: 100%;
+        padding: 0 5% 0 5%;
+    }
+    #principal figure{width: 100%;}
+    .serviciosResumen h3{display: none;}
+    .serviciosResumen img{width: 90%;}
+}
